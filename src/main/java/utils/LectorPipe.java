@@ -30,7 +30,7 @@ public class LectorPipe {
     */
     public LectorPipe() {
         try {
-            String direccion = (new File(".")).getCanonicalPath() + "//PetriNet//incidenciaYmarcado.html";
+            String direccion = (new File(".")).getCanonicalPath() + "//PetriNet//incidencias.html"; //
             this.incYmarc = new File(direccion);
             Document doc = this.parsear(this.incYmarc);
             Elements tables;
@@ -163,6 +163,7 @@ public class LectorPipe {
 
     }
 
+    /*
     public static void main(String[] args) {
         try {
             LectorPipe lectorPipe = new LectorPipe();
@@ -196,5 +197,9 @@ public class LectorPipe {
         } catch (Exception e) {
             System.err.println("Error al crear el lector");
         }
+
+
     }
+     */
+
 }

@@ -104,6 +104,7 @@ public class Matriz {
         return Matriz.multiplicacion(matriz, new Matriz(array));
     }
 
+    // TODO: ver si sacamos el parametro x xq siempre se le pasa x=0
     public static Matriz obtenerFila(Matriz matriz, int x) throws MatrizException {
         if (x < 0 || x > matriz.getM()) {
             throw new MatrizException("Fila no disponible");
