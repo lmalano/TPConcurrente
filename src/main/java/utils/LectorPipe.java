@@ -143,7 +143,7 @@ public class LectorPipe {
 
     public int[][] getResultadoPInvariantes(){
         Document doc = this.parsear(this.analisisInvariante);
-        String [] cast = doc.toString().split("<h3> P-Invariant equations </h3>");
+        String [] cast = doc.toString().split("<h3>P-Invariant equations</h3>");
         cast = cast[1].split("Analysis time:");
         cast = cast[0].split("<br>");
         List<String> ecuaciones= new ArrayList<String>();
